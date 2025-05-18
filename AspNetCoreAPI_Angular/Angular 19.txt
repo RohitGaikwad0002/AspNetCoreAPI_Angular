@@ -1,0 +1,35 @@
+Angular 19
+
+-- Basic creation of Angular Project
+1. Open Visual Studio Code.
+2. Open Terminal and change Directory by using this command
+   cd "D:\Rohit\IT Knowledge Center (Main)\AspNetCoreAPI_Angular\Frontend_Code" ("Your Folder Path Here")
+3. ng new role-management-new : Use this command to create new angular project in that folder.
+4. Close the VS Code and Open that folder where we have created an Angular project and run the project using terminal.
+5. ng s : this is the command to run the Angular project.
+6. ng generate component user : this is the command which is used to create a new component.
+7. ng generate service user : this command is use for creating services in angular.
+8. Install Prime ng controls : npm install primeng primeicons
+9. npm install @angular/cdk
+10. add styles in angular.json file 
+   "styles": [
+  "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+  "node_modules/primeng/resources/primeng.min.css",
+  "node_modules/primeicons/primeicons.css",
+  "src/styles.css"
+  ]
+11. Prime NG Controls : https://primeng.org/
+
+
+Error Resolving:
+1. how to resolve NullInjectorError: R3InjectorError error in angular 19
+- In app.config.ts file 
+  Imports : 
+  import { provideClientHydration } from '@angular/platform-browser';
+  import { provideHttpClient } from '@angular/common/http';
+
+and then add :
+export const appConfig: ApplicationConfig = {
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(), provideHttpClient()]
+};
+
