@@ -1,0 +1,300 @@
+/* ===================== DataTable Styling ===================== */
+::ng-deep .p-datatable {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* ===================== Section Title ===================== */
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+/* ===================== Add Button ===================== */
+.custom-add-button button {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 14px rgba(0, 114, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.custom-add-button button:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 114, 255, 0.6);
+}
+
+.custom-add-button button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 114, 255, 0.3);
+}
+
+/* ===================== Action Buttons ===================== */
+.styled-action-button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+}
+
+.styled-action-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Common dimensions for action buttons */
+.styled-action-button.p-button {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1rem !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer !important;
+}
+
+/* Edit Button */
+.p-button-info.styled-action-button {
+  background-color: #007bff !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.p-button-info.styled-action-button:hover {
+  background-color: #0056b3 !important;
+}
+
+/* Delete Button */
+.p-button-danger.styled-action-button {
+  background-color: #dc3545 !important;
+  border: none !important;
+  color: #fff !important;
+}
+
+.p-button-danger.styled-action-button:hover {
+  background-color: #a71d2a !important;
+}
+
+/* ===================== Menu Bar Styling ===================== */
+::ng-deep .p-menubar {
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(to right, #667eea, #764ba2); /* attractive gradient */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Menu items */
+::ng-deep .menu-spacing {
+  margin: 0 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+::ng-deep .menu-spacing:hover {
+  color: #ffe600;
+  transform: scale(1.1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ===================== Dialog Styling ===================== */
+
+/* Dialog Box */
+.custom-dialog {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  z-index: 1050; /* Ensure the popup stays on top of the overlay */
+}
+
+/* Title */
+.custom-dialog .p-dialog-header {
+  background-color: #007BFF;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Dialog Body */
+.custom-dialog .p-fluid {
+  padding: 20px;
+}
+
+.custom-dialog .p-field {
+  margin-bottom: 15px;
+}
+
+.custom-dialog label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Input fields */
+.custom-dialog .p-inputtext-lg {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.custom-dialog .p-inputtext-lg:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Buttons */
+.p-button-lg {
+  font-size: 16px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Save Button */
+.p-button-success {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.p-button-success:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Cancel Button */
+.p-button-secondary {
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+}
+
+.p-button-secondary:hover {
+  background-color: #ec971f;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.custom-dialog .p-dialog-footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Modal overlay */
+/* Blur and dim background when modal opens */
+.p-dialog-mask {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); /* for Safari */
+  transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+}
+
+/* Close icon */
+.p-dialog .p-dialog-header .p-dialog-close {
+  color: white;
+}
+
+/* Applying the dark overlay and blur to the background */
+body {
+  transition: filter 0.3s ease;
+}
+
+.p-dialog-mask.active {
+  backdrop-filter: blur(10px); /* Stronger blur */
+  background-color: rgba(0, 0, 0, 0.6) !important; /* Darker background for the overlay */
+}
+
+/* When dialog is visible, the body will have the dark blur effect */
+body.modal-open {
+  filter: blur(5px); /* Apply blur to the background */
+  background-color: rgba(0, 0, 0, 0.3); /* Darker effect */
+}
+
+/* Dialog visibility enhancement */
+body.modal-open .p-dialog-mask {
+  opacity: 1 !important; /* Ensure opacity is fully visible */
+}
+
+body.modal-open {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
+/* Dark blur overlay */
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+::ng-deep .p-dialog {
+  z-index: 1000 !important;
+}
+
+::ng-deep .custom-dialog .p-dialog {
+  border-radius: 20px !important; /* Make corners rounder */
+  overflow: hidden; /* Ensure child content doesn't break the radius */
+}
+
+
+/* ===================== Confirmation popup Styling ===================== */
+
+::ng-deep .custom-accept-button {
+  background: linear-gradient(135deg, #f44336, #d32f2f) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 2rem !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: bold !important;
+  box-shadow: 0 4px 8px rgba(244, 67, 54, 0.4) !important;
+  transition: background 0.3s, transform 0.2s !important;
+}
+
+::ng-deep .custom-accept-button:hover {
+  background: linear-gradient(135deg, #e53935, #c62828) !important;
+  transform: scale(1.05) !important;
+}
+
+::ng-deep .custom-reject-button {
+  background: linear-gradient(135deg, #90a4ae, #607d8b) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 2rem !important;
+  padding: 0.6rem 1.5rem !important;
+  font-weight: bold !important;
+  box-shadow: 0 4px 8px rgba(96, 125, 139, 0.4) !important;
+  transition: background 0.3s, transform 0.2s !important;
+}
+
+::ng-deep .custom-reject-button:hover {
+  background: linear-gradient(135deg, #78909c, #455a64);
+  transform: scale(1.05);
+}
+
+

@@ -1,0 +1,88 @@
+/* ===================== DataTable Styling ===================== */
+::ng-deep .p-datatable {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* ===================== Section Title ===================== */
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  
+  /* ===================== Add Button ===================== */
+  .custom-add-button button {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 14px rgba(0, 114, 255, 0.4);
+    transition: all 0.3s ease;
+  }
+  
+  .custom-add-button button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 114, 255, 0.6);
+  }
+  
+  .custom-add-button button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 114, 255, 0.3);
+  }
+  
+  
+  /* ===================== Menu Bar Styling ===================== */
+  ::ng-deep .p-menubar {
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(to right, #667eea, #764ba2); /* attractive gradient */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  /* Menu items */
+  ::ng-deep .menu-spacing {
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  ::ng-deep .menu-spacing:hover {
+    color: #ffe600;
+    transform: scale(1.1);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Title */
+.custom-dialog .p-dialog-header {
+    background-color: #007BFF;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  /* Buttons */
+.p-button-lg {
+    font-size: 16px;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  /* Footer */
+.custom-dialog .p-dialog-footer {
+    padding: 20px;
+    text-align: center;
+  }

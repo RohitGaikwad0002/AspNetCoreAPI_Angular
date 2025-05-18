@@ -1,0 +1,104 @@
+<h2 class="section-title">Roles</h2>
+
+<!-- Add Button -->
+<div class="custom-add-button">
+  <button pButton type="button" label="Add Role" icon="pi pi-plus" (click)="showAddRoleDialog()"></button>
+</div><br>
+
+<!-- Role Table -->
+<div class="main-container">
+  <p-table
+  [value]="roles"
+  [paginator]="true"
+  [rows]="5"
+  [tableStyle]="{ 'min-width': '50rem' }"
+  [sortMode]="'single'"
+>
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="roleId" style="width:25%">
+        Role ID <p-sortIcon field="roleId"></p-sortIcon>
+      </th>
+      <th pSortableColumn="roleName" style="width:25%">
+        Role Name <p-sortIcon field="roleName"></p-sortIcon>
+      </th>
+      <th style="width:25%">Actions</th>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-role>
+    <tr>
+      <td>{{ role.roleId }}</td>
+      <td>{{ role.roleName }}</td>
+      <td>
+        <button 
+          pButton 
+          icon="pi pi-pencil" 
+          class="p-button-rounded p-button-info p-button-sm styled-action-button" 
+          (click)="onEditRole(role)" 
+          style="margin-right: .5rem">
+        </button>
+      
+        <button 
+          pButton 
+          icon="pi pi-trash" 
+          class="p-button-rounded p-button-danger p-button-sm styled-action-button" 
+          (click)="onDeleteRole(role)">
+        </button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+</div>
+
+
+<!-- Blur Overlay -->
+<div *ngIf="displayAddDialog" class="blur-overlay"></div>
+
+<!-- Add Role Dialog -->
+<p-dialog 
+  header="Add Role" 
+  [(visible)]="displayAddDialog" 
+  [modal]="true" 
+  [closable]="true"
+  [style]="{ width: '750px' }"
+  class="custom-dialog"
+>
+  <div class="p-fluid" style="padding: 1rem;">
+    <div class="form-row" style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+      
+      <!-- RoleName -->
+      <div style="flex: 1; min-width: 280px;">
+        <div class="p-field">
+          <label for="roleName">Name</label>
+          <input id="roleName" type="text" pInputText [(ngModel)]="newRole.roleName" class="p-inputtext-lg w-full" />
+        </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer Buttons -->
+  <ng-template pTemplate="footer">
+    <div class="p-d-flex p-jc-end">
+      <button 
+        pButton 
+        label="Save" 
+        icon="pi pi-check" 
+        class="p-button-success p-button-lg" 
+        (click)="saveRole()">
+      </button>
+      <button 
+        pButton 
+        label="Cancel" 
+        icon="pi pi-times" 
+        class="p-button-secondary p-button-lg" 
+        (click)="cancelAddRole()" 
+        style="margin-left: .5rem;">
+      </button>
+    </div>
+  </ng-template>
+</p-dialog>
+
+
+<p-toast></p-toast>
+<p-confirmDialog></p-confirmDialog>

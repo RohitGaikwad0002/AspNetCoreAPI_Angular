@@ -1,0 +1,17 @@
+<!-- Header -->
+<p-menubar [model]="menuItems">
+    <ng-template pTemplate="start">
+      <span class="app-title">Role Management</span>
+    </ng-template>
+  </p-menubar>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <router-outlet></router-outlet>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>© 2025 Role Management App. All rights reserved.</p>
+  </footer>
+  

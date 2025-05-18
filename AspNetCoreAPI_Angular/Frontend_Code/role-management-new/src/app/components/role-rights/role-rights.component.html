@@ -1,0 +1,45 @@
+<h2 class="section-title">Role Rights</h2>
+
+<!-- Save Button -->
+<div class="custom-add-button">
+    <button pButton type="button" label="Save" (click)="updateRoleRights()"></button>
+</div><br>
+  
+<!-- Role-Right Table -->
+<div class="main-container">
+  <p-table
+    [value]="rolerights"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [sortMode]="'single'"
+  >
+    <ng-template pTemplate="header">
+      <tr>       
+        <th pSortableColumn="roleName" style="width:25%">
+          Role Name <p-sortIcon field="roleName"></p-sortIcon>
+        </th>
+        <th style="width:10%">ALL</th>
+        <th style="width:10%">VIEW</th>
+        <th style="width:10%">ADD</th>
+        <th style="width:10%">EDIT</th>
+        <th style="width:10%">DELETE</th>
+        <th style="width:10%">IMPORT</th>
+        <th style="width:10%">EXPORT</th>
+      </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-role>
+        <tr>
+          <td>{{ role.roleName }}</td>
+          <td><p-checkbox class="custom-checkbox" [(ngModel)]="role.fullAccess" binary="true"></p-checkbox></td>
+          <td><p-checkbox class="custom-checkbox" [(ngModel)]="role.canView" binary="true"></p-checkbox></td>
+          <td><p-checkbox class="custom-checkbox" [(ngModel)]="role.canAdd" binary="true"></p-checkbox></td>
+          <td><p-checkbox class="custom-checkbox" [(ngModel)]="role.canEdit" binary="true"></p-checkbox></td>
+          <td><p-checkbox class="custom-checkbox" [(ngModel)]="role.canDelete" binary="true"></p-checkbox></td>
+          <td><p-checkbox class="custom-checkbox" [(ngModel)]="role.canImport" binary="true"></p-checkbox></td>
+          <td><p-checkbox class="custom-checkbox" [(ngModel)]="role.canExport" binary="true"></p-checkbox></td>
+        </tr>
+      </ng-template>
+      
+      
+  </p-table>
+</div>

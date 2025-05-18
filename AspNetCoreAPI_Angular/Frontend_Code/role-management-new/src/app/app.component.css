@@ -1,0 +1,60 @@
+.main-content {
+    padding: 1.5rem;
+    min-height: calc(100vh - 120px);
+  }
+  
+  .app-footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  .app-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  ::ng-deep .p-menubar .p-menubar-root-list > .p-menubar-item {
+    margin-left: 1.5rem;
+  }
+  
+/* Style the whole menu bar */
+::ng-deep .p-menubar {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 114, 255, 0.3);
+  padding: 0.5rem 1rem;
+}
+
+/* Menu item spacing */
+::ng-deep .menu-spacing {
+  margin-right: 1rem;
+}
+
+/* Style for each menu item */
+::ng-deep .p-menuitem-link {
+  color: white !important;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  padding: 0.6rem 1rem;
+}
+
+/* Hover effect */
+::ng-deep .p-menuitem-link:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-2px);
+}
+
+/* Icon color */
+::ng-deep .p-menuitem-icon {
+  color: white !important;
+  margin-right: 0.5rem;
+}
+
+::ng-deep .p-menuitem-link.router-link-active {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  font-weight: bold;
+}
+
