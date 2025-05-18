@@ -1,0 +1,3 @@
+Step 01 : Create one folder and open VS 2022 and then Clone repository in the same folder using this repo link - https://github.com/RohitGaikwad0002/AspNetCoreAPI_Angular.git
+
+Step 02 : asp.net core web api will run successfully (backend code) but Angular code will give some errors of primeng files because of Angular 19 - node modules doesn't contains resources folder under primeng. So, unzip resources folder from the repo and copy paste into node modules folder into - primeng folder. It will runs successfully.
