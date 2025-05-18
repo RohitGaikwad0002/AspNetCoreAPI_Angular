@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/AspNetCoreAPI_Angular/Backend_Code/aspNetCoreWebAPI/aspNetCoreWebAPI/bin/Debug/net8.0
+/AspNetCoreAPI_Angular/Backend_Code/aspNetCoreWebAPI/aspNetCoreWebAPI/obj

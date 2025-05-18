@@ -1,0 +1,6 @@
+@aspNetCoreWebAPI_HostAddress = http://localhost:5149
+
+GET {{aspNetCoreWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
